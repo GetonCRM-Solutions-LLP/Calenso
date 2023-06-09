@@ -49,7 +49,7 @@ private class ContactWebserviceTest {
         request.requestURI = 'https://calenso-dev-ed.develop.my.salesforce.com/services/apexrest/Calenso/Contact';
         request.httpMethod = 'POST';
         request.addHeader('Content-Type', 'application/json');
-        request.requestBody = Blob.valueOf('[{"prename" : "Riddick","lastname" : "Tom","email" : "tomriddick420@gmail.com","phone" : 8036521469,"mobile" : 95412684536,"title" : "VP, Sales","remarks" : "SportKing, founded in 1998, is a start-up based in Austin, TX.","uuid" : "WOS","birthday" : "3/21/2023","worker_email" : "marvin.felder@calenso.com"}]');
+        request.requestBody = Blob.valueOf('[{"prename" : "Riddick","lastname" : "Tom","email" : "tomriddick420@gmail.com","phone" : 8036521469,"mobile" : 95412684536,"title" : "VP, Sales","remarks" : "SportKing, founded in 1998, is a start-up based in Austin, TX.","uuid" : "WOS","birthday" : "2023-03-21","worker_email" : "marvin.felder@calenso.com"}]');
         // set the RestContext parameters
         RestContext.request = request;
         RestContext.response = response;
@@ -247,7 +247,7 @@ private class ContactWebserviceTest {
         request.requestURI = 'https://calenso-dev-ed.develop.my.salesforce.com/services/apexrest/Calenso/Contact';
         request.httpMethod = 'PATCH';
         request.addHeader('Content-Type', 'application/json');
-        request.requestBody = Blob.valueOf('[{"uuid" : "WOS","prename" : "Tom","lastname" : "Wulmar","birthday": "4/24/2023","email" : "tomwulmar243@gmail.com","mobile" : 95412684536,"phone" : 8036521469,"title" : "VP Marketing","body" : "Nintendo, founded in 1789, is a start-up based in Dallas, TX. Nintendo sells its product through retailers and its own website.","worker_email" : "marvin.felder@calenso.com"}]');
+        request.requestBody = Blob.valueOf('[{"uuid" : "WOS","prename" : "Tom","lastname" : "Wulmar","birthday": "2023-03-21","email" : "tomwulmar243@gmail.com","mobile" : 95412684536,"phone" : 8036521469,"title" : "VP Marketing","body" : "Nintendo, founded in 1789, is a start-up based in Dallas, TX. Nintendo sells its product through retailers and its own website.","worker_email" : "marvin.felder@calenso.com"}]');
         // set the RestContext parameters
         RestContext.request = request;
         RestContext.response = response;
